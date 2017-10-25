@@ -9,16 +9,27 @@ nodemailer.createTestAccount((err, account) => {
     secure: false,
     auth: {
       user: "jinnchan@qq.com", 
-      pass: "********" 
+      pass: "*******" 
     }
   });
 
   let mailOptions = {
     from: '"Fred Foo 👻" <jinnchan@qq.com>', 
-    to: "jinn2008@qq.com", 
+    to: "jinnchan@qq.com,zhi.chen@ucarinc.com", 
     subject: "Hello ✔", 
     text: "Hello worlddg?",
-    html: "<b>Hello world  vv?</b>" 
+    html: "<b>Hello world  vv?</b>" ,
+    // 发送附件
+    attachments:[  
+        {  
+          filename : 'package.json',  
+          path: './package.json'  
+        },  
+        {  
+          filename : 'content',  
+          content : '发送内容'  
+        }  
+      ] 
   };
 
 
