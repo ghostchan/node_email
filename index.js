@@ -15,7 +15,7 @@ nodemailer.createTestAccount((err, account) => {
 
   let mailOptions = {
     from: '"Fred Foo 👻" <jinnchan@qq.com>', 
-    to: "jinnchan@qq.com,zhi.chen@ucarinc.com", 
+    to: "jinnchan@qq.com", 
     subject: "Hello ✔", 
     text: "Hello worlddg?",
     html: "<b>Hello world  vv?</b>" ,
